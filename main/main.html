@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-PASS</title>
+    <link rel="icon" href="/images/icon1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="top"><h2 class="logo">X-PASS</h2></div>
+        <h3>Hey Welcome Back !!</h3>
+        <nav class="navigation">
+            <a href="/login/index.html">Home</a>
+            <a href="/about/aboutus.html">About</a>
+            <!-- <a href="#">Services</a> -->
+            <a href="/contact/contactus.html">Contact</a>
+        </nav>
+    </header>
+    <div class="glow"></div>
+    <div class="container">
+        <h1>Personal Password Manager</h1>
+        <p>We're thrilled to have you here, and we understand the importance of keeping your digital life secure. In a world filled with countless online accounts, managing passwords can be a daunting task. That's where we come in – your trusted partner in safeguarding your digital identity.</p>
+        <h2>Your Passwords<span id="alert">(Copied!)</span> </h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+            <!-- for Website -->
+            <label for="website" class="intro" id="web">Website: </label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+            <!-- for username -->
+            <label for="username" class="intro" id="user">Username: </label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <!-- for password -->
+            <label for="password" class="intro" id="pass">Password: </label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

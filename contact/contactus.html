@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-PASS Contact us</title>
+    <link rel="icon" href="/images/icon1.jpg">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glow"></div>
+    <header>
+        <div class="top"><h2 class="logo">X-PASS</h2></div>
+        <h1>Contact Us</h1>
+        <nav class="navigation">
+            <a href="/login/index.html">Home</a>
+            <a href="/about/aboutus.html">About</a>
+        </nav>
+    </header>
+    <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter Here" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Here" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter Here" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your query here!!!" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p class="call">Call us on : +91-9555967823</p>
+</body>
+</html>

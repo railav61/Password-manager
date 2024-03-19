@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-PASS Home</title>
+    <link rel="icon" href="/images/icon1.jpg">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">X-PASS</h2>
+        <nav class="navigation">
+            <a href="/about/aboutus.html">About</a>
+            <!-- <a href="#">Services</a> -->
+            <a href="/contact/contactus.html">Contact</a>
+            <button class="btnlogin-popup">Login</button>
+        </nav>
+    </header>
+    <div class="well">
+        <h1>Hello!</h1>
+        <h2>Welcome to X-PASS your personal password manager</h2>
+        <p>Empower Your Digital Security with Confidence <br>
+            In a world where our lives are intricately woven into the digital fabric, 
+            protecting your online presence is non-negotiable. 
+            Welcome to X-PASS Personal Password Manager, your fortress in the realm of cybersecurity
+        </p>
+    </div>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <div class="error-message" id="error-message"></div>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label for="">Password</label>
+                </div>
+                <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="button" class="btn" id="btn" onclick="login()">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#" class="register-link">Register here</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label for="">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="regUsername" required>
+                        <label for="">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label for="">Password</label>
+                </div>
+                <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    agree to terms & conditions
+                </label>
+                </div>
+                <button type="submit" class="btn" onclick="register()">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
